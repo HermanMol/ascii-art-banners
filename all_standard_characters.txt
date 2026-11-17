@@ -1,0 +1,13 @@
+Source: https://patorjk.com/software/taag/#p=display&f=Colossal
+Date: 2026-11-17 10:57:24
+
+These must be created:
+
+abcdefghijklm
+nopqrstuvwxyz
+ABCDEFGHIJKLM
+NOPQRSTUVWXYZ
+1234567890
+-_~!@#$%^&*
+=[]{}\|;:'"
+<>,./?`()

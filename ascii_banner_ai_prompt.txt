@@ -1,0 +1,25 @@
+CoPilot, 2026-11-17 11:33:37
+Using the ASCII-art characters created by 
+        Website = https://patorjk.com/software/taag
+        Style   = Colossal
+================================================================================
+Create a windows powershell script that takes one ascii string as input 
+argument, the string may consist of the printable ascii characters ranging from
+hex 20 until hex 7E.
+
+It then loops thru the input string one character at a time
+
+Of each separate character the hex code is retrieved, {hex-code}..
+It then opens a file with name "ascii_{[hex-code}.txt"
+It reads the whole file including the lines that only contain spaces and each
+line is put in an array, the "line_array". This array has maximum 15 entries, 
+which is the expected number of lines in each "ascii_{[hex-code}.txt"
+The lines of each character are concattenated to te already present characters
+in each "line_array" entry.
+
+When all characters are processed, the array is dumped into a text outputfile
+with the name "ascii_banner_" followed by the system datetime in the format
+"yyyymmdd_hhmiss" and extention ".txt".
+
+Add the logic that skips the lines in the "ascii_{[hex-code}.txt" files that 
+start with a hash "#" on position 1.
