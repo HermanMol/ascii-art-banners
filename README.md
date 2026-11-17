@@ -53,8 +53,29 @@ and the PowerShell scripts in a common `bin` folder that is in your PATH.
 
 You could also write the generated ASCII Art-line output direct to the console.
 
-# How it was made?
+## How it was made?
 
 Haha, most work was getting the ASCII art-characters in the `ascii_XX.text` files. The 
 PowerShell script `ascii_banner.ps1` was originally generated using Copilot. I made
 a few alterations.
+
+## Notes on the used Colossal font
+Retrieved from the [website](https://patorjk.com/software/taag):
+
+    Colossal.flf (Jonathon - jon@mq.edu.au)
+    8 June 1994
+    
+    Explanation of first line:
+    flf2 - "magic number" for file identification
+    a    - should always be `a', for now
+    $    - the "hardblank" -- prints as a blank, but can't be smushed
+    11   - height of a character
+    8    - height of a character, not including descenders
+    20   - max line length (excluding comment lines) + a fudge factor
+    32   - default smushmode for this font
+    13   - number of comment lines
+    
+    ---
+    
+    Font modified June 17, 2007 by patorjk 
+    This was to widen the space character.
