@@ -11,6 +11,8 @@
 
     Finally writes the banner to:
       ascii_banner_YYYYMMDD_HHMMSS.txt
+      
+    Created by H. Mol on 2026-11-17 using Copilot.
 
 .EXAMPLE
     .\ascii_banner.ps1 "HELLO WORLD"

@@ -8,12 +8,12 @@ and writes the ASCII Art-like banner in a unique file.
 The PowerShell script simply walks the input string character-by-character
 
 - gets the hex value of the character, example `M = 0x4D`.
-- reads the assiciated file "ascii_XX.txt", example `ascii_4D.txt`.
+- reads the associated file "ascii_XX.txt", example `ascii_4D.txt`.
 - concattenates each line of that "ascii_XX.txt" to the appropriate entry
 of an internal array.
 
 When all characters of the input string are processed, the whole internal array
-is written to the unique output file.
+is written to the unique output TXT file.
 
 
 The ASCII Art-like characters where generated using 
@@ -43,13 +43,15 @@ Most important is that only the ASCII characters 0x20 (space) thru 0x7E (tilde) 
 Character `0x7F` is `DEL` and the characters `0x00` thru `0x1F` are non-printables.
 
 If a character outside the valid range is used, or an `ascii_XX.txt` file is not found,
-the `ascii_unknown.txt` character is printed and a warning message is issued.
+the `ascii_unknown.txt` file is used and a warning message is issued.
 
-All available character are in the file `ascii_art_characters_0x20-0x7e.txt`.
+All available characters are in the file `ascii_art_characters_0x20-0x7e.txt`.
 
 ## Improvements
 You may want to put the individual `ascii_XX.txt` files in a separate `data` folder
 and the PowerShell scripts in a common `bin` folder that is in your PATH.
+
+You could also write the generated ASCII Art-line output direct to the console.
 
 # How it was made?
 
